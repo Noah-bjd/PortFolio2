@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Quattrocento+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/* .hero {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: #ffe5ec  ;
+    padding: 2rem;
+  } */
+/* hero.css */
+.hero {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #eed7c5; /* Light background color */
+    text-align: center;
+    padding: 2rem;
+    overflow: hidden;
+  }
+  
+  .hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><text x="10" y="10" font-size="125" fill="%2383a69b">☾𖤓</text></svg>');
+    background-size: 50px 50px;
+    opacity: 0.2;
+    pointer-events: none;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    color: #3d405b; /* Dark color for the name */
+    margin-bottom: 0.5rem;
+  }
+  
+  .hero h3 {
+    font-size: 1.5rem;
+    color: #666; /* Gray color for the title */
+    font-weight: 400;
+  }
+
+.logo-container {
+  margin-bottom: 2rem; /* Space between the logo and the text */
+}
+
+.logo {
+  width: 100px; /* Adjust the size of the SVG */
+  height: auto;
+}
+
+  
+h3 {
+    letter-spacing: .05em;
+    text-transform: uppercase;
+}
+h1 {
+    font-size: 2rem;
+    margin-bottom: 16px;
+}
+h1, h3 {
+    font-family: Quattrocento, sans-serif;
+    font-weight: 300;
+    margin: 0;
+}
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
+@keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  .logo {
+    width: 10rem;
+    height: auto;
+    animation: float 3s ease-in-out infinite;
+  }
