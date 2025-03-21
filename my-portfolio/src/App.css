@@ -43,3 +43,11 @@
     margin-left: 0; /* Reset margin */
   }
 }
+.Loop {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer/Edge */
+}
+
+.Loop::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, and Edge */
+}
