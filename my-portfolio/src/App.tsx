@@ -3,7 +3,7 @@ import Hero from './components/Hero';
 import About from './components/About';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
-import './App.css';
+import './styles/App.css';
 
 const App: React.FC = () => {
   return (
@@ -54,13 +54,8 @@ const InfiniteScrollLoop: React.FC<{ children: React.ReactNode }> = ({
   const handleGlobalScroll = useCallback(
     (event: WheelEvent) => {
       if (scrollRef.current) {
-        // Prevent default scroll behavior
         event.preventDefault();
-
-        // Adjust the scroll position of the right-side container
         scrollRef.current.scrollTop += event.deltaY;
-
-        // Trigger the infinite scroll logic
         handleScroll();
       }
     },
@@ -70,18 +65,21 @@ const InfiniteScrollLoop: React.FC<{ children: React.ReactNode }> = ({
   // Set initial height and scroll position
   useLayoutEffect(() => {
     if (contentRef.current) {
-      setHeight(contentRef.current.offsetHeight);
-      if (scrollRef.current) {
-        scrollRef.current.scrollTop = backupHeight;
-      }
+      const measuredHeight = contentRef.current.offsetHeight;
+      setHeight(measuredHeight);
+
+      // Wait for the next frame to ensure height is updated
+      requestAnimationFrame(() => {
+        if (scrollRef.current) {
+          scrollRef.current.scrollTop = measuredHeight * surroundingBackup;
+        }
+      });
     }
-  }, [backupHeight]);
+  }, []);
 
   // Attach global scroll event listener
   useLayoutEffect(() => {
     window.addEventListener('wheel', handleGlobalScroll, { passive: false });
-
-    // Cleanup
     return () => {
       window.removeEventListener('wheel', handleGlobalScroll);
     };
