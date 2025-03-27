@@ -33,6 +33,23 @@ html, body {
   display: none; /* Chrome, Safari */
 }
 
+
+.cursor-trail-wrapper {
+  cursor: none; /* Hide default cursor */
+}
+.cursor-trail {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 9999;
+  filter: drop-shadow(0 0 1px rgba(255, 255, 255, 0.8));
+}
+
+
+
 `;
 
 export default GlobalStyles;

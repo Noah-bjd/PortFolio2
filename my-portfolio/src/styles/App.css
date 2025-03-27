@@ -54,20 +54,25 @@
 
 
 /* Default style for inactive sections */
+/* Default style for inactive sections */
 .inactive-section {
   background: #aaa;
   display: flex;
   flex-direction: column;
   opacity: 0.2;
   position: relative;
+  transform: scale(0.95); /* Slightly smaller */
+  transition: transform 0.5s ease, opacity 0.5s ease;
 }
 
 /* Style for the active section */
 .active-section {
-  background: white; 
+  background: white;
   opacity: 1;
-  transition-duration: 0.5s;
+  transform: scale(1); /* Normal size */
+  transition: transform 0.5s ease, opacity 0.5s ease;
 }
+
 
 h1, h2, h3 {
   font-family: Quattrocento, sans-serif;

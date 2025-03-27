@@ -3,6 +3,7 @@ import Hero from './components/Hero';
 import About from './components/About';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
+import CursorFollower from './components/Mouse';
 import './styles/App.css';
 
 const InfiniteScrollLoop: React.FC<{ children: React.ReactNode; setActiveSection: (section: string) => void }> = ({
@@ -106,6 +107,7 @@ const App: React.FC = () => {
   
 
   return (
+    
     <div className="container">
       <div className="left-side" style={{ backgroundColor: backgroundColors[activeSection] || '#fff' }}>
         <img src="https://via.placeholder.com/800x1200" alt="Fixed Background" className="fixed-image" />
