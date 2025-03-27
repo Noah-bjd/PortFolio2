@@ -5,12 +5,14 @@ import { FaEnvelope, FaLinkedin, FaGithub } from 'react-icons/fa'; // Import ico
 
 const ContactSection = styled.section`
   padding: 4rem 2rem;
-  background: #e29578;
+  background-color: rgba(0, 45, 64, 0.5);
+  min-height: 53vh;
+
 `;
 
 const ContactHeading = styled.h2`
   font-size: 2rem;
-  color: #fff;
+  color: #333;
   margin-bottom: 1.5rem;
   display: flex;
   align-items: center;
@@ -18,7 +20,7 @@ const ContactHeading = styled.h2`
 `;
 
 const ContactInfo = styled.div`
-  color: #fff;
+  color: #333;
 `;
 
 const ContactItem = styled.p`
@@ -30,7 +32,7 @@ const ContactItem = styled.p`
 `;
 
 const ContactLink = styled.a`
-  color: #fff;
+  color: #3d405b;
   text-decoration: none;
   transition: opacity 0.2s ease;
 

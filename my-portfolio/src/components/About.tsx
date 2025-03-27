@@ -6,7 +6,7 @@ import './../styles/about.css';
 
 const AboutSection = styled.section`
   padding: 4rem 2rem;
-  background: #f4f1de;
+  background-color: rgba(222, 157, 54, 0.5);
   max-width: 800px;
   margin: 0 auto;
 `;

@@ -17,20 +17,17 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    min-height: 79.3vh; 
     text-align: center;
     padding: 2rem;
-    background-image: url('/VN.jpg'); /* Path to your PNG */
-    background-size: cover; /* Ensure the image covers the entire section */
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Prevent the image from repeating */
-    color: #090707; /* Light text color for contrast */
+    background-color: rgba(229, 72, 73, 0.5);
+    color: #090707; 
   }
   
   .hero h1 {
     font-family: Quattrocento, sans-serif;
     font-weight: 300;
-     margin: 0;
+    margin: 0;
   }
   
   .hero h3 {

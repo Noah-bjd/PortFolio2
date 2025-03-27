@@ -5,7 +5,7 @@ import { FaCode } from 'react-icons/fa'; // Import the Code icon
 
 const ProjectsSection = styled.section`
   padding: 4rem 2rem;
-  background: #ffddd2;
+  background-color: rgba(114, 153, 116, 0.5);
   max-width: 800px;
   margin: 0 auto;
 `;
@@ -87,7 +87,7 @@ const Projects: React.FC = () => {
         <ProjectItem>
           <LeftSection>
             <ProjectTitle>NEUPONG</ProjectTitle>
-            <ProjectDate>DRF, PostgreSQL, WebSockets, Next.js, Nginx</ProjectDate>
+            <ProjectDate>Next.js,PostgreSQL, WebSockets</ProjectDate>
             <FreelanceTag>Team Project</FreelanceTag>
           </LeftSection>
           <RightSection>
@@ -110,7 +110,7 @@ const Projects: React.FC = () => {
           <LeftSection>
             <ProjectTitle>CCS-Power</ProjectTitle>
             <ProjectDate>C#, .NET, Blazor</ProjectDate>
-            <FreelanceTag>Freelance</FreelanceTag>
+            <FreelanceTag>Job</FreelanceTag>
           </LeftSection>
           <RightSection>
             <ProjectDescription>
