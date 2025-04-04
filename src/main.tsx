@@ -7,7 +7,6 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <GlobalStyles />
     <CursorFollower />
-
     <App />
   </React.StrictMode>
 );

@@ -49,7 +49,7 @@ const SkillItem = styled.li`
 const IconHeadingContainer = styled.div`
   display: flex;
   align-items: center;
-  margin-bottom: 2rem; /* Add spacing below the icon and heading */
+  margin-bottom: 2rem; 
 `;
 
 interface AboutProps {
@@ -59,15 +59,12 @@ interface AboutProps {
 const About: React.FC<AboutProps> = ({ isActive }) => {
   return (
     <AboutSection>
-      {/* Icon and Heading */}
       <IconHeadingContainer>
         <SiReact style={{ fontSize: '2.5rem', marginRight: '10px' }} className={isActive ? 'active' : 'inactive'} />
         <h3 className={isActive ? 'active' : 'inactive'}>Skills</h3>
       </IconHeadingContainer>
 
-      {/* Skills List */}
       <SkillsList>
-        {/* Systems & Tools */}
         <SkillCategory>
           <CategoryTitle className={isActive ? 'active' : 'inactive'}>Systems & Tools</CategoryTitle>
           <SkillItems>
@@ -83,7 +80,6 @@ const About: React.FC<AboutProps> = ({ isActive }) => {
           </SkillItems>
         </SkillCategory>
 
-        {/* Computer Systems Programming Languages */}
         <SkillCategory>
           <CategoryTitle className={isActive ? 'active' : 'inactive'}>Computer Systems Programming Languages</CategoryTitle>
           <SkillItems>
@@ -99,7 +95,6 @@ const About: React.FC<AboutProps> = ({ isActive }) => {
           </SkillItems>
         </SkillCategory>
 
-        {/* Frameworks & Libraries */}
         <SkillCategory>
           <CategoryTitle className={isActive ? 'active' : 'inactive'}>Frameworks & Libraries</CategoryTitle>
           <SkillItems>
@@ -111,7 +106,6 @@ const About: React.FC<AboutProps> = ({ isActive }) => {
           </SkillItems>
         </SkillCategory>
 
-        {/* Personal Skills */}
         <SkillCategory>
           <CategoryTitle className={isActive ? 'active' : 'inactive'}>Personal Skills</CategoryTitle>
           <SkillItems>
